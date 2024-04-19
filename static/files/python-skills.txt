@@ -1,0 +1,23 @@
+Selenium Web Driver
+Flask
+PyCharm/Vscode
+Jupyter Notebook
+Google Colab
+NumPy
+Matplotlib
+REST API's
+Scikit learn
+Pandas
+Databases
+SQL
+SQLite
+PostgreSQL
+Authentication
+Seaborn
+Request
+WTForms
+Tkinter
+HTML
+CSS
+Bootstrap
+Sqlalchemy

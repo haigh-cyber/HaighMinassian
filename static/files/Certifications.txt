@@ -1,0 +1,5 @@
+TryHackMe – Completed Beginner Course
+TryHackMe – Completed Jr Penetration Tester Course
+TryHackMe – Ranking top 7% of all users (2.6 million users)
+Udemy Course – “100 Days of Code: The Complete Python Pro Bootcamp”
+HackTheBox – Gained root access to 10 different web application sandbox environments along with completed write-ups for each

@@ -1,0 +1,21 @@
+Nmap
+Wireshark
+HashCat
+John the Ripper
+Gobuster
+Security Operations
+Office 365 suite
+Microsoft defender
+Salesforce
+AWS
+Linux/Windows/Mac
+Nessus
+Burp suite
+Metasploit
+Active Directory
+Command prompt
+Bash command line
+Powershell
+SQL
+VMware
+Docker

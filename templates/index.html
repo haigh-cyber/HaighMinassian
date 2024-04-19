@@ -1,0 +1,139 @@
+{% include "header.html" %}
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haigh Minassian - Resume</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link
+      href="{{ url_for('static', filename='css/styles.css') }}"
+      rel="stylesheet"
+    />
+</head>
+
+<body>
+<div class="container">
+    <div class="section-header">
+
+            <h1>Haigh Minassian</h1>
+
+        </div>
+    <img class=circular-img src="static/assets/img/Headshot.png">
+
+
+        <div class="resume-item">
+            <h2>Professional Summary</h2>
+            <p>Cyber Security Analyst and Level 1 Security Operations Centre (SOC) Analyst, with 2 years of experience in Telecommunications and a Cyber Security Service provider.</p>
+        </div>
+
+
+        <div class="resume-item">
+            <div class="education">
+
+            <h2>Education</h2>
+            <h3>Bachelor of Information Technology, University of Technology Sydney (UTS), Completed November 2023</h3>
+            <ul>
+                <li> Major: Cybersecurity and Networking</li>
+                <li>Major: Enterprise System Development</li>
+            </ul>
+            </div>
+
+        </div>
+
+
+
+        <div class="resume-item">
+            <div class="work">
+            <h2>Work Experience</h2>
+            <h3>Cyber Security Internship Gridware</h3>
+            <h4>July 2023 – Dec 2023</h4>
+            <p>Selected from 800 applicants. Internship covered Offensive Security, Governance Risk and Compliance and Incident Response departments.</p>
+
+                Responsibilities:
+                    <ul>
+                        <li>Analysis of Hash Cracking Station:
+                            <ul>
+                                <li>Conducted an in-depth analysis evaluating the technical and financial feasibility of implementing a dedicated hash cracking station within the organization's security infrastructure.</li>
+                                <li>Reviewed existing literature and examined various physical and cloud-based solutions.</li>
+                                <li>Prepared a detailed report and presentation summarizing the findings and recommendations.</li>
+                                <li>Presented the report and findings to key stakeholders, including the CEO, CTO, and senior management.</li>
+                                <li>Company adopted a hash cracking station based on my analysis and presentation.</li>
+                            </ul>
+                        </li>
+                        <li>Successfully penetrated multiple Linux sandbox environments using tools on a Kali Linux operating system, including Metasploit, Burp Suite, Gobuster, Nmap and more.
+                            <ul>
+                                <li>Developed personal methodology of finding vulnerabilities on web applications, establishing remote code execution, and escalating privileges to root user access.</li>
+                            </ul>
+                        </li>
+                        <li>Participated in client engagements, assisting in establishing Penetration Testing Agreements and conducting numerous shadow sessions to test clients' web application environments.</li>
+                        <li>Reviewed and updated Gridwares' vulnerability register.</li>
+                        <li>Gained knowledge of the OWASP, NIST, CIS, ISO27001 and ACSC Essential 8 standards and frameworks.</li>
+                    </ul>
+            </div>
+
+
+            <div class="work">
+            <h3>Network Service Desk analyst / Level 1 SOC analyst IPSTAR Australia</h3>
+            <h4>March 2022 – August 2023</h4>
+            <p>Network and technical support utilizing satellite, fixed line, and fixed wireless services through ticket resolution, online chat interactions, and calls.</p>
+                <ul>
+            <li>
+        Responsibilities:
+        <ul>
+            <li>Achieved customer satisfaction rating of 95% over the 18-month period.</li>
+            <li>Finished top position in my team for Key Performance Indicators (KPIs) for 9 out of 18 months.</li>
+            <li>Project coordinated a team of 6 to update and improve the companies processes for technical, provisioning and account departments.</li>
+            <li>NBN MSP trained handling support tickets for all NBN RSPs.</li>
+            <li>Used Microsoft Defender to enhance threat detection and response capabilities.</li>
+            <li>Led a team in revitalizing both internal and external-facing knowledge bases for the technical, billing, and provisioning departments.</li>
+            <li>Conducted training sessions for new hires.</li>
+        </ul>
+    </li>
+</ul>
+            </div>
+        </div>
+
+            <div class="resume-item">
+            <h2>Licenses / Certification / Courses / Other</h2>
+            <ul class="list-group">
+            {%for i in certs%}
+            <li class="list-group-item">{{i}}</li>
+            {% endfor%}
+            </ul>
+            </div>
+
+
+        <div class="resume-item">
+        <h3>Security/Cloud skills and knowledge:</h3>
+        <ul class="list-group">
+            {%for i in skill1%}
+            <li class="list-group-item">{{i}}</li>
+            {% endfor%}
+        </ul>
+    </div>
+
+        <div class="resume-item">
+    <h3>Python skills and knowledge:</h3>
+    <ul class="list-group">
+        {%for i in skill2%}
+        <li class="list-group-item">{{i}}</li>
+        {% endfor%}
+    </ul>
+        </div>
+
+        </div>
+
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
+
+{% include "footer.html" %}
