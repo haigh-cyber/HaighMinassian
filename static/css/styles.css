@@ -194,6 +194,17 @@
     margin-bottom: 30px;
 }
 
+.watch-this-space {
+    font-size: 40px;
+    color: #ff6600;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
 
 .education{
       margin-bottom: 5%;
