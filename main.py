@@ -1,5 +1,3 @@
-import os
-import binary as binary
 import flask
 from flask import Flask, render_template, request, url_for, redirect, flash, send_from_directory, abort
 from flask_bootstrap import Bootstrap5
@@ -7,7 +5,7 @@ import gunicorn
 
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = os.environ.get('FLASK_KEY')
+app.config['SECRET_KEY'] = 'f24q3tg562n54n7tht7g63'
 
 Bootstrap5(app)
 
@@ -41,6 +39,6 @@ def projects():
 
 
 if __name__ == "__main__":
-    app.run(debug=False)
+    app.run(debug=True, port=5003)
 
 
